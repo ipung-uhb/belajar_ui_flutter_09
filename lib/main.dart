@@ -10,10 +10,8 @@ class MyApp extends StatelessWidget {
           title: Text('Flutter UI Succinctly'),
         ),
         body: Container(
-          margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+          margin: EdgeInsets.all(100),
           padding: EdgeInsets.all(50),
-          width: 300,
-          height: 300,
           color: Colors.lightBlue,
           child: Text('Container'),
         ),
