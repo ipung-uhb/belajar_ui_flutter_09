@@ -14,7 +14,11 @@ class MyApp extends StatelessWidget {
           padding: EdgeInsets.all(50),
           decoration: BoxDecoration(
             color: Colors.lightBlue,
-            shape: BoxShape.circle,
+            shape: BoxShape.rectangle,
+            borderRadius: BorderRadius.only(
+              topRight: Radius.elliptical(50, 50),
+              bottomLeft: Radius.elliptical(25, 25),
+            ),
           ),
           child: Text('Container'),
         ),
@@ -32,7 +36,7 @@ class MyApp extends StatelessWidget {
           bodyMedium: TextStyle(
               fontSize: 26, fontStyle: FontStyle.italic),
         ),
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
       ),
     );
   }
