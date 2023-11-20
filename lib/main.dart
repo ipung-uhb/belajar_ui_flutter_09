@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Text(
             'Our first Flutter layout',
-            style: TextStyle(fontSize: 24),
+            /*style: TextStyle(fontSize: 24),*/
           ),
         ),
         floatingActionButton: FloatingActionButton(
@@ -25,7 +25,12 @@ class MyApp extends StatelessWidget {
         ),
       ),
       theme: ThemeData(
-        brightness: Brightness.dark,
+        primaryColor: Colors.indigo,
+        hintColor: Colors.amber,
+        textTheme: TextTheme(
+          bodyMedium: TextStyle(fontSize: 24, fontStyle: FontStyle.italic),
+        ),
+        brightness: Brightness.light,
       ),
     );
   }
