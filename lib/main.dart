@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 void main() => runApp(MyApp());
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,7 +9,14 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Flutter UI Succinctly'),
         ),
-        body: Container(color: Colors.lightBlue, child: ButtonBar()),
+        body: Container(
+          margin: EdgeInsets.all(100),
+          padding: EdgeInsets.all(50),
+          width: 300,
+          height: 300,
+          color: Colors.lightBlue,
+          child: Text('Container'),
+        ),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.ac_unit),
           onPressed: () {
@@ -23,7 +28,8 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.indigo,
         hintColor: Colors.amber,
         textTheme: TextTheme(
-          bodyMedium: TextStyle(fontSize: 26, fontStyle: FontStyle.italic),
+          bodyMedium: TextStyle(
+              fontSize: 26, fontStyle: FontStyle.italic),
         ),
         brightness: Brightness.dark,
       ),
