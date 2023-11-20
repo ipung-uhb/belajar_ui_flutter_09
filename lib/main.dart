@@ -11,12 +11,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Flutter UI Succinctly'),
         ),
-        body: Center(
-          child: Text(
-            'Our first Flutter layout',
-            /*style: TextStyle(fontSize: 24),*/
-          ),
-        ),
+        body: Container(color: Colors.lightBlue, child: ButtonBar()),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.ac_unit),
           onPressed: () {
@@ -28,9 +23,9 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.indigo,
         hintColor: Colors.amber,
         textTheme: TextTheme(
-          bodyMedium: TextStyle(fontSize: 24, fontStyle: FontStyle.italic),
+          bodyMedium: TextStyle(fontSize: 26, fontStyle: FontStyle.italic),
         ),
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
       ),
     );
   }
