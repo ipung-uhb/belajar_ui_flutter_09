@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
         body: Container(
           margin: EdgeInsets.all(100),
           padding: EdgeInsets.all(50),
-          color: Colors.lightBlue,
+          decoration: BoxDecoration(
+            color: Colors.lightBlue,
+            shape: BoxShape.circle,
+          ),
           child: Text('Container'),
         ),
         floatingActionButton: FloatingActionButton(
@@ -34,3 +37,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
